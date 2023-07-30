@@ -1,13 +1,13 @@
-import React from "react";
+import { Wrapper } from './Statistics.styled';
 import PropTypes from 'prop-types';
  const Statistics = ({good, neutral, bad, total, PositivePercentage }) => ( 
-    <ul>
-            <li>Good: {good}</li>
-            <li>Neutral: {neutral}</li>
-            <li>Bad: {bad}</li>
-            <li>Total:{total}</li>
-            <li>PositiveFeedback:{ PositivePercentage}%</li>
-    </ul>
+    <Wrapper>
+            <span>Good: {good}</span>
+            <span>Neutral: {neutral}</span>
+            <span>Bad: {bad}</span>
+            <span>Total:{total}</span>
+            <span>PositiveFeedback:{ PositivePercentage}%</span>
+    </Wrapper>
 )
 Statistics.propTypes = {
     good: PropTypes.number.isRequired,

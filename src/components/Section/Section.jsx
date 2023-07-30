@@ -1,13 +1,13 @@
-import React from "react";
-import styled from "@emotion/styled";
+import { Title, Wrapper } from './Section.styled';
+
 import PropTypes from 'prop-types';
 
 
  const Section = ({ title, children }) => {
     return (
-        <div>
-            <h2 className="title">{title}</h2>
-            { children}</div>
+        <Wrapper>
+            <Title >{title}</Title>
+            { children}</Wrapper>
         
     );
 };
